@@ -1,8 +1,8 @@
 const Footer = () => {
 	return (
-		<>
-			<h1>Footer</h1>
-		</>
+		<footer className='bg-foreground text-copy-light py-4 px-4 text-center'>
+			<h1>&copy;2024 Aditya Bhange | All rights reserved.</h1>
+		</footer>
 	);
 };
 
