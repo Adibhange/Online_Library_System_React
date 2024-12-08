@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import BrowseBook from "./pages/BrowseBook";
 import AddBook from "./pages/AddBook";
 import CategoryBooks from "./pages/CategoryBooks.jsx";
+import BookDetails from "./pages/BookDetails";
 
 const router = createBrowserRouter([
 	{

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import bookCategories from "../data/bookCategories";
+import PopularBooks from "../components/PopularBooks";
 
 const Home = () => {
 	return (
@@ -15,7 +16,7 @@ const Home = () => {
 
 			{/* Book Categories */}
 			<p className='text-xl mt-4 text-primary '>Explore Book Categories</p>
-			<div className='flex w-full gap-4'>
+			<div className='flex w-full gap-3'>
 				{bookCategories.map((category) => {
 					return (
 						<div
@@ -30,6 +31,10 @@ const Home = () => {
 					);
 				})}
 			</div>
+
+			{/* Books */}
+			<p className='text-xl mt-4 text-primary '>Popular Books</p>
+			<PopularBooks />
 		</section>
 	);
 };
