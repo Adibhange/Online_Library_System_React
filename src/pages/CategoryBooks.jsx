@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
-import books from "../data/bookData";
 import BookItem from "../components/BookItem";
+import { useSelector } from "react-redux";
 
 const CategoryBooks = () => {
 	const { category } = useParams();
+	const books = useSelector((state) => state.books.bookLists);
 	return (
 		<section className='container flex flex-col gap-3 justify-center py-6 px-4 mx-auto'>
 			<h1 className='text-3xl font-bold text-center'>{category}</h1>

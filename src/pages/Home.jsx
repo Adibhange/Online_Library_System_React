@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import bookCategories from "../data/bookCategories";
-import books from "../data/bookData";
 import BookItem from "../components/BookItem";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+	const books = useSelector((state) => state.books.bookLists);
 	const popularBooks = books.slice(0, 4);
 
 	return (
