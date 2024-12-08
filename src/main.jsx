@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Home from "./pages/Home";
+import BrowseBook from "./pages/BrowseBook";
+import AddBook from "./pages/AddBook";
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				element: <Home />,
+			},
+			{
+				path: "books",
+				element: <BrowseBook />,
+			},
+			{
+				path: "books/add",
+				element: <AddBook />,
 			},
 		],
 	},
