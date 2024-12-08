@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import bookCategories from "../data/bookCategories";
+import BookItem from "../components/BookItem";
+import books from "../data/bookData";
 
 const BrowseBook = () => {
 	return (
@@ -19,6 +21,23 @@ const BrowseBook = () => {
 								{category.name}
 							</Link>
 						</div>
+					);
+				})}
+			</div>
+
+			<div className='grid grid-cols-4 gap-4'>
+				{books.map((book) => {
+					return (
+						<BookItem
+							key={book.id}
+							bookId={book.id}
+							bookTitle={book.title}
+							bookAuthor={book.author}
+							bookCoverImage={book.coverImage}
+							bookDescription={book.description}
+							bookCategory={book.category}
+							bookRating={book.rating}
+						/>
 					);
 				})}
 			</div>
