@@ -28,7 +28,7 @@ const BookItem = ({
 			</div>
 
 			<Link
-				to={`/books/${bookId}`}
+				to={`/book/${bookId}`}
 				className='p-2 text-primary-light'>
 				View Details
 			</Link>

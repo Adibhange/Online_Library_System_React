@@ -32,6 +32,10 @@ const router = createBrowserRouter([
 				path: "books/:category",
 				element: <CategoryBooks />,
 			},
+			{
+				path: "book/:bookId",
+				element: <BookDetails />,
+			},
 		],
 	},
 ]);
