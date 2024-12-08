@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import bookCategories from "../data/bookCategories";
-import PopularBooks from "../components/PopularBooks";
+import books from "../data/bookData";
+import BookItem from "../components/BookItem";
 
 const Home = () => {
+	const popularBooks = books.slice(0, 4);
+
 	return (
 		<section className='container flex flex-col  justify-center py-6 px-4'>
 			<div className='text-center space-y-4'>
@@ -32,9 +35,24 @@ const Home = () => {
 				})}
 			</div>
 
-			{/* Books */}
+			{/* Popular Books */}
 			<p className='text-xl mt-4 text-primary '>Popular Books</p>
-			<PopularBooks />
+			<div className='grid grid-cols-4 gap-4'>
+				{popularBooks.map((book) => {
+					return (
+						<BookItem
+							key={book.id}
+							bookId={book.id}
+							bookTitle={book.title}
+							bookAuthor={book.author}
+							bookCoverImage={book.coverImage}
+							bookDescription={book.description}
+							bookCategory={book.category}
+							bookRating={book.rating}
+						/>
+					);
+				})}
+			</div>
 		</section>
 	);
 };
