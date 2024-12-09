@@ -1,8 +1,34 @@
-# React + Vite
+## Online Library System (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Introduction
 
-Currently, two official plugins are available:
+This is a simple online library system built using React. It allows users to browse through books, add books to their library, and rate books. The system also includes a search feature to help users find specific books.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+
+- Browse books by category
+- Add books to your library
+- Rate books
+- Search for books
+
+### Installation
+
+To install the project, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/adityabinge/Online-Library-System-React.git
+```
+
+2. Install the dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```

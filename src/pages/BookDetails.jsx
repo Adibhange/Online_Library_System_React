@@ -15,7 +15,7 @@ const BookDetails = () => {
 			<img
 				src={book.coverImage}
 				alt={book.title}
-				className='h-64 w-full object-cover rounded-md'
+				className='h-auto w-full object-cover rounded-md'
 			/>
 			<h1 className='text-3xl font-bold text-center'>{book.title}</h1>
 
