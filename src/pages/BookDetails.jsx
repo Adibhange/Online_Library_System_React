@@ -1,9 +1,11 @@
+import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import books from "../data/bookData";
 
 const BookDetails = () => {
 	const { bookId } = useParams();
-	const book = books.find((book) => book.id === parseInt(bookId, 10));
+	const bookLists = useSelector((state) => state.books.bookLists);
+
+	const book = bookLists.find((book) => book.id === parseInt(bookId, 10));
 
 	return (
 		<section className='container flex flex-col gap-3 justify-center py-6 px-4 mx-auto bg-foreground w-1/2 rounded-lg shadow-md'>

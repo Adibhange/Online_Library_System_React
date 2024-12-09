@@ -14,14 +14,11 @@ const BrowseBook = () => {
 	}, [bookLists]);
 
 	const handleSearch = () => {
-		const filteredBooks = books.filter((book) => {
-			return (
-				book.title.toLowerCase().includes(searchText.toLowerCase()) ||
-				book.author.toLowerCase().includes(searchText.toLowerCase())
-			);
-		});
-		setBooks(filteredBooks);
-		setSearchText("");
+		const results = bookLists.filter((book) =>
+			book.title.toLowerCase().includes(searchText.toLowerCase())
+		);
+		setBooks(results);
+		setSearchText(""); // Clear search bar after filtering
 	};
 
 	const handleClearSearch = () => {
