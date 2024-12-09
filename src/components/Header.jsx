@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<header className='container flex items-center justify-between py-4 px-4'>
+		<header className='container flex items-center justify-between py-4 px-4 sticky top-0 backdrop-blur-sm'>
 			<section className='my-2 w-full flex items-center justify-between rounded-3xl shadow-lg border-border bg-foreground px-6 py-4 text-copy'>
 				<h1 className=' font-extrabold text-primary text-3xl'>
 					<Link to={"/"}>Library System</Link>
