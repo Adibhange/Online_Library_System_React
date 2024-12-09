@@ -14,8 +14,10 @@ const BrowseBook = () => {
 	}, [bookLists]);
 
 	const handleSearch = () => {
-		const results = bookLists.filter((book) =>
-			book.title.toLowerCase().includes(searchText.toLowerCase())
+		const results = bookLists.filter(
+			(book) =>
+				book.title.toLowerCase().includes(searchText.toLowerCase()) ||
+				book.author.toLowerCase().includes(searchText.toLowerCase())
 		);
 		setBooks(results);
 		setSearchText(""); // Clear search bar after filtering
