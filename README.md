@@ -18,7 +18,7 @@ To install the project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/adityabinge/Online-Library-System-React.git
+git clone https://github.com/Adibhange/Online_Library_System_React.git
 ```
 
 2. Install the dependencies:
